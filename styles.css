@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  /*primary*/
+  --softBlue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  /*secundary*/
+--veryCarkBlue: hsl(217, 54%, 11%);
+--veryBarkBlue: hsl(216, 50%, 16%);
+--veryDarkBlue: hsl(215, 32%, 27%);
+--white: hsl(0, 0%, 100%);
+}
+
+body {
+  background-color: var(--veryCarkBlue);
+}
+
+.main-container {
+  background-color: var(--veryBarkBlue);
+  border-radius: 14px;
+  margin: 60px auto;
+  width: 270px;
+  height: 480px;
+  padding: 20px;
+  box-shadow: 2px 2px 2px 3px rgba(0, 0, 0,0.3);
+}
+
+.main-container .img-container {
+  background-image: url(./images/image-equilibrium.jpg);
+  background-size: cover;
+  border-radius: 7px;
+  width: 270px;
+  height: 270px;
+  
+}
+
+.main-container h1 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 22px;
+  color: var(--white);
+  margin: 20px 0;
+}
+
+.main-container p {
+  font-family: 'Outfit', sans-serif;
+  color: var(--softBlue);
+  margin: 14px 0;
+}
+
+.dates-container {
+  display:  flex;
+  justify-content: space-between;
+}
+
+.dates-container .time-container {
+  display: flex;
+}
+
+.dates-container .day-container {
+  display: flex;
+}
+
+.main-container .dates-container h3 {
+  font-family: 'Outfit', sans-serif;
+  color: var(--cyan);
+  font-weight: 700;
+  font-size: 1em;
+  margin: 0 6px;
+}
+
+.main-container .dates-container h4 {
+  font-family: 'Outfit', sans-serif;
+  color: var(--softBlue);
+  font-weight: 400;
+  margin: 0 6px;
+}
+
+hr {
+  margin: 17px 0 8px 0;
+  border: 1px solid var(--veryDarkBlue);
+  
+}
+.footer-container { 
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.footer-container img {
+  width: 30px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  margin: 0 15px 0 0;
+}
+
+.footer-container strong {
+  color: var(--white);
+  font-weight: 300;
+}
+
+.attribution { 
+  font-size: 15px; 
+  text-align: center; 
+  color: var(--cyan);
+}
+
+.attribution a { 
+  color: hsl(228, 100%, 76%); 
+}
